@@ -20,7 +20,7 @@ form.addEventListener('submit', async function (event) {
 
 const login = async (username, password) => {
     try {
-        const response = await fetch('http://localhost:5116/api/User/token', {
+        const response = await fetch('http://localhost:5157/User/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -46,8 +46,8 @@ const login = async (username, password) => {
         // Redirigir o realizar acciones según los roles
         if (data.roles.includes('Administrador')) {
             window.location.href = '../admin.html';
-        } else if (data.roles.includes('Empleado')) {
-            window.location.href = '../empleado.html';
+        } else if (data.roles.includes('Cliente')) {
+            window.location.href = '../cliente.html';
         } else {
             // Manejar otros roles o escenarios
             
