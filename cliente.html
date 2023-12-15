@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./Styles/StyleCliente.css">
+	<link rel="stylesheet" href="./Styles/StyleCliente2.css">
+	
+	<title>AdminSite</title>
 </head>
 <body>
-    <p>eres Cliente</p>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> Customer Site</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active" data-target="todos"><i class='bx bxs-dashboard icon'></i> Todos Los Productos</a></li>
+            <li><a href="#" data-target="abrigos"><i class='bx bxs-t-shirt icon'></i> Abrigos</a></li>
+            <li><a href="#" data-target="camisetas"><i class='bx bxs-t-shirt icon'></i> Camisetas</a></li>
+            <li><a href="#" data-target="pantalones"><i class='bx bxs-t-shirt icon'></i> Pantalones</a></li>
+
+            <li><a href="#" data-target="carrito"><i class='bx bx-cart icon'></i> Carrito</a></li>
+	
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				
+			</form>
+			
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<!-- MAIN -->
+        <main>
+            <h1 class="title">Nuestros Productos</h1>
+            <div class="info-data">
+                <div class="todos">
+                    <!-- Contenido de la sección "Todos" -->
+                    <div class="card1">
+                        <div class="personaje">
+                            <div class="imagen_personaje"></div>
+                            <div class="detalle">
+                                <h2>Camiseta 01</h2>
+                                <h3>2000</h3>
+                                <div class="btn"><i class='bx bxs-cart-add icon'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abrigos">
+                    <div class="card1">
+                        <!-- Contenido de la sección "Abrigos" -->
+                        <p>b</p>
+                    </div>
+                </div>
+                <div class="camisetas">
+                    <div class="card1">
+                        <!-- Contenido de la sección "Camisetas" -->
+                        <p>c</p>
+                    </div>
+                </div>
+                <div class="pantalones">
+                    <div class="card1">
+                        <!-- Contenido de la sección "Pantalones" -->
+                        <p>d</p>
+                    </div>
+                </div>
+                <div class="carrito">
+                    <div class="card1">
+                        <!-- Contenido de la sección "Carrito" -->
+                        <p>e</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN -->
+
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+    <script src="./Scripts/ClienteScripts/MainCliente.js" async></script>
+	<script src="./Scripts/ClienteScripts/AppCliente.js" defer type="module"></script>
+	<script src="./Scripts/ClienteScripts/Eventos.js" defer type="module"></script>
 </body>
 </html>
